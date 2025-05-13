@@ -1,0 +1,43 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment folder
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore package distribution files
+*.egg
+*.egg-info
+dist/
+build/
+
+# Ignore PyCharm and VSCode project files
+.idea/
+.vscode/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs and temp files
+*.log
+*.bak
+*.swp
+
+# Ignore system files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore large data files and models
+*.h5
+*.pth
+*.pt
+*.ckpt
+
+# Ignore compiled shared libraries or DLLs (useful for OpenCV, PyTorch, etc.)
+*.dll
+*.so
+*.dylib

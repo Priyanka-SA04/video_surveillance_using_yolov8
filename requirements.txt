@@ -1,0 +1,8 @@
+
+ultralytics
+opencv-python
+streamlit
+flask
+pafy
+youtube-dl
+yagmail
