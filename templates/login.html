@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-900 text-white">
+  <form method="POST" action="/admin_login" class="bg-gray-800 p-6 rounded-lg space-y-4 w-80 shadow-lg">
+    <h2 class="text-xl font-bold text-center text-teal-400">🔒 Admin Login</h2>
+    <input name="username" placeholder="Username" class="w-full p-2 bg-gray-700 rounded" required />
+    <input name="password" type="password" placeholder="Password" class="w-full p-2 bg-gray-700 rounded" required />
+    <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 py-2 rounded">Login</button>
+  </form>
+</body>
+</html>
