@@ -9,7 +9,7 @@ import cv2
 SETTINGS_FILE = os.path.join(os.getcwd(), "settings.json")
 
 # Global variables to track alert state
-last_alert_time = 15
+last_alert_time = 60
 alert_triggered = False
 ALERT_DURATION = 10  # seconds
 

@@ -125,10 +125,11 @@ def detect_fall(frame):
             FALL_ANGLE_THRESHOLD = 45
 
             # Decision logic: combine CNN and pose heuristic
-            if prediction > 0.5 and angle is not None and angle > FALL_ANGLE_THRESHOLD:
+            if prediction > 0.7 and angle is not None and angle > FALL_ANGLE_THRESHOLD:
                 fall_boxes.append([x1, y1, x2, y2])
                 trigger_alert(frame)
-            # Optional: you can relax conditions here or add other heuristics
+          
+          
 
     return fall_boxes
 
