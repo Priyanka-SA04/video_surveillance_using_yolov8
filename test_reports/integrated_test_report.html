@@ -1,0 +1,214 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Integrated Test Report</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f4f6f8;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                color: #2c3e50;
+            }
+            .summary {
+                background: #ffffff;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            }
+            .summary p {
+                font-size: 16px;
+                margin: 8px 0;
+            }
+            .pass { color: #27ae60; }
+            .fail { color: #e74c3c; }
+            .error { color: #f39c12; }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background: #ffffff;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+            }
+            th, td {
+                padding: 12px 16px;
+                border-bottom: 1px solid #eee;
+            }
+            th {
+                background-color: #2c3e50;
+                color: white;
+                text-align: left;
+            }
+            .row-pass {
+                background-color: #e8f8f5;
+                color: #27ae60;
+            }
+            .row-fail {
+                background-color: #fdecea;
+                color: #e74c3c;
+            }
+            .footer {
+                margin-top: 30px;
+                text-align: center;
+                font-size: 14px;
+                color: #aaa;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🧪 Integrated Test Report</h1>
+        <p><strong>🗓️ Date:</strong> 2025-05-25 20:55:41</p>
+
+        <div class="summary">
+            <p><strong>Total Tests:</strong> 20</p>
+            <p class="pass"><strong>✔ Passed:</strong> 17</p>
+            <p class="fail"><strong>✖ Failures:</strong> 3</p>
+            <p class="error"><strong>⚠️ Errors:</strong> 3</p>
+        </div>
+
+        <h2>📋 Detailed Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Test Case</th>
+                    <th>Result</th>
+                    <th>Error (if any)</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr class="row-fail">
+                <td>test_01_homepage_loads (__main__.TestFullUISuite.test_01_homepage_loads)</td>
+                <td>✖ Failed</td>
+                <td>Traceback (most recent call last):<br>  File "C:\Users\prath\OneDrive\Desktop\intelligent_surveillance_system\tests\test_unit.py", line 21, in test_01_homepage_loads<br>    self.assertIn("Intelligent Video Surveillance", self.driver.title)<br>AssertionError: 'Intelligent Video Surveillance' not found in 'Intelligent Surveillance'<br></td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_02_home_heading_visible (__main__.TestFullUISuite.test_02_home_heading_visible)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-fail">
+                <td>test_03_home_buttons_exist (__main__.TestFullUISuite.test_03_home_buttons_exist)</td>
+                <td>✖ Failed</td>
+                <td>Traceback (most recent call last):<br>  File "C:\Users\prath\OneDrive\Desktop\intelligent_surveillance_system\tests\test_unit.py", line 31, in test_03_home_buttons_exist<br>    self.assertIn("Admin Settings", texts)<br>AssertionError: 'Admin Settings' not found in ['Start Surveillance']<br></td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_04_surveillance_button_navigates (__main__.TestFullUISuite.test_04_surveillance_button_navigates)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_05_go_back_to_home (__main__.TestFullUISuite.test_05_go_back_to_home)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_06_index_loads_and_title (__main__.TestFullUISuite.test_06_index_loads_and_title)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_07_radio_buttons_exist (__main__.TestFullUISuite.test_07_radio_buttons_exist)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_08_click_webcam_radio_enables_start (__main__.TestFullUISuite.test_08_click_webcam_radio_enables_start)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_09_click_youtube_radio_displays_input (__main__.TestFullUISuite.test_09_click_youtube_radio_displays_input)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_10_invalid_youtube_url_disables_start (__main__.TestFullUISuite.test_10_invalid_youtube_url_disables_start)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_11_valid_youtube_url_enables_start (__main__.TestFullUISuite.test_11_valid_youtube_url_enables_start)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_12_start_detection_shows_iframe (__main__.TestFullUISuite.test_12_start_detection_shows_iframe)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_13_stop_detection_hides_iframe (__main__.TestFullUISuite.test_13_stop_detection_hides_iframe)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_14_warning_message_visible_on_stop (__main__.TestFullUISuite.test_14_warning_message_visible_on_stop)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_15_device_radio_displays_file_input (__main__.TestFullUISuite.test_15_device_radio_displays_file_input)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_16_navigate_to_admin_page (__main__.TestFullUISuite.test_16_navigate_to_admin_page)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_17_check_phone_and_gmail_fields (__main__.TestFullUISuite.test_17_check_phone_and_gmail_fields)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_18_invalid_phone_alert (__main__.TestFullUISuite.test_18_invalid_phone_alert)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-pass">
+                <td>test_19_valid_phone_and_gmail_submit (__main__.TestFullUISuite.test_19_valid_phone_and_gmail_submit)</td>
+                <td>✔ Passed</td>
+                <td>N/A</td>
+            </tr>
+        
+            <tr class="row-fail">
+                <td>test_20_home_link_from_admin (__main__.TestFullUISuite.test_20_home_link_from_admin)</td>
+                <td>✖ Failed</td>
+                <td>Traceback (most recent call last):<br>  File "C:\Users\prath\OneDrive\Desktop\intelligent_surveillance_system\tests\test_unit.py", line 141, in test_20_home_link_from_admin<br>    self.driver.find_element(By.LINK_TEXT, "Back to Home").click()<br>    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "C:\Users\prath\OneDrive\Desktop\intelligent_surveillance_system\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element<br>    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]<br>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "C:\Users\prath\OneDrive\Desktop\intelligent_surveillance_system\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute<br>    self.error_handler.check_response(response)<br>  File "C:\Users\prath\OneDrive\Desktop\intelligent_surveillance_system\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response<br>    raise exception_class(message, screen, stacktrace)<br>selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Back to Home"}<br>  (Session info: chrome=137.0.7151.41); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br>Stacktrace:<br>	GetHandleVerifier [0x00007FF67E85CF45+75717]<br>	GetHandleVerifier [0x00007FF67E85CFA0+75808]<br>	(No symbol) [0x00007FF67E628F9A]<br>	(No symbol) [0x00007FF67E67F4C6]<br>	(No symbol) [0x00007FF67E67F77C]<br>	(No symbol) [0x00007FF67E6D2577]<br>	(No symbol) [0x00007FF67E6A73BF]<br>	(No symbol) [0x00007FF67E6CF39C]<br>	(No symbol) [0x00007FF67E6A7153]<br>	(No symbol) [0x00007FF67E670421]<br>	(No symbol) [0x00007FF67E6711B3]<br>	GetHandleVerifier [0x00007FF67EB5D71D+3223453]<br>	GetHandleVerifier [0x00007FF67EB57CC2+3200322]<br>	GetHandleVerifier [0x00007FF67EB75AF3+3322739]<br>	GetHandleVerifier [0x00007FF67E876A1A+180890]<br>	GetHandleVerifier [0x00007FF67E87E11F+211359]<br>	GetHandleVerifier [0x00007FF67E865294+109332]<br>	GetHandleVerifier [0x00007FF67E865442+109762]<br>	GetHandleVerifier [0x00007FF67E84BA59+4825]<br>	BaseThreadInitThunk [0x00007FFA9A3A259D+29]<br>	RtlUserThreadStart [0x00007FFA9AE4AF58+40]<br><br></td>
+            </tr>
+        
+            </tbody>
+        </table>
+
+        <div class="footer">
+            Generated by Selenium Test Suite • © 2025
+        </div>
+    </body>
+    </html>
+    

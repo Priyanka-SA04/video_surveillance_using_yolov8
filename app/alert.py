@@ -30,8 +30,8 @@ def send_email_alert(image_path):
 
     try:
         # Sender credentials
-        sender_email = "prathikshanayak.04@gmail.com"
-        app_password = "qymx fqhb ljxw iuqx"  # Replace with Gmail app password
+        sender_email = "youremail@gmail.com"
+        app_password = "---- ---- ---- ----"  # Replace with Gmail app password
 
         yag = yagmail.SMTP(sender_email, app_password)
 
